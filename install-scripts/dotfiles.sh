@@ -19,9 +19,19 @@ LOG="Install-Logs/install-$(date +%d-%H%M%S)_dotfiles.log"
 # Installation of main components
 printf "\n%s - Installing dotfiles .... \n" "${NOTE}"
 
-git clone https://github.com/tableba/dotfile.git "$HOME/.fake_dotfiles" 
-if [ $? -eq 1 ]; then
-  echo "{$ERROR} couldn't clone the dotfiles repo (https://github.com/tableba/dotfiles.git), you have to install it manually. (check $LOG)"
+if [ -d $HOME/.dotfiles ]; then
+  cd "$HOME/.dotfiles" || exit 1
+  echo "$ERROR $HOME/.dotfiles already exists, it is up to you to run the configure the dotfiles."
+else
+  if git clone https://github.com/tableba/dotfiles.git $HOME/.dotfiles 2>&1 | tee -a "$LOG"; then
+    cd "$HOME/.dotfiles" || exit 1
+    chmod +x install.sh
+    ./install.sh
+  else
+    echo "$ERROR Couldn't clone the dotfiles repo (https://github.com/tableba/dotfiles.git), you may have to install it manually. (check $LOG)"
+  fi
 fi
+
+cd "$PARENT_DIR" || exit 1
 
 echo
