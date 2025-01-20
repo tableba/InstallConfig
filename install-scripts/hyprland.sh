@@ -13,16 +13,18 @@ source "$(dirname "$(readlink -f "$0")")/global_functions.sh"
 LOG="Install-Logs/install-$(date +%d-%H%M%S)_hyprland.log"
 
 hyprland_packages=(
-  kitty
-  dunst
-  xdg-desktop-portal-hyprland
-  hyprpolkitagent
-  qt5-wayland
-  qt6-wayland
-  hyprpaper
-  rofi-wayland
-  cliphist
-  dolphin
+	hyprland
+	waybar
+	kitty
+	dunst
+	xdg-desktop-portal-hyprland
+	hyprpolkitagent
+	qt5-wayland
+	qt6-wayland
+	hyprpaper
+	rofi-wayland
+	cliphist
+	dolphin
 )
 
 hyprland_packages_yay=(

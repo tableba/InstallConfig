@@ -31,6 +31,17 @@ echo -e "\n$NOTE Checking system requirements..."
 chmod +x "$SCRIPT_DIR/check_packages.sh"
 "$SCRIPT_DIR/check_packages.sh"
 
+#installing yay
+read -p "Installing yay, Are you sure you want to continue? (y/n, Enter for yes): " confirm
+if [[ -z "$confirm" || "$confirm" =~ ^[yY]([eE][sS])?$ ]]; then
+    echo
+else
+    echo "Exiting..."
+    exit 1
+fi
+chmod +x "$SCRIPT_DIR/yay.sh"
+"$SCRIPT_DIR/yay.sh"
+
 #hyprland and other packages
 read -p "Installing hyprland packages, Are you sure you want to continue? (y/n, Enter for yes): " confirm
 if [[ -z "$confirm" || "$confirm" =~ ^[yY]([eE][sS])?$ ]]; then
