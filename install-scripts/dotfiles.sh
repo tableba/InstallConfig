@@ -19,7 +19,7 @@ LOG="Install-Logs/install-$(date +%d-%H%M%S)_dotfiles.log"
 # Installation of main components
 printf "\n%s - Installing dotfiles .... \n" "${NOTE}"
 
-if [ -d $HOME/.dotfiles ]; then
+if [ -d "$HOME/.dotfiles" ]; then
   cd "$HOME/.dotfiles" || exit 1
   echo "$ERROR $HOME/.dotfiles already exists, it is up to you to run the configure the dotfiles."
 else
