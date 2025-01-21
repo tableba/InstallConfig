@@ -23,7 +23,7 @@ if [ -d $HOME/.dotfiles ]; then
   cd "$HOME/.dotfiles" || exit 1
   echo "$ERROR $HOME/.dotfiles already exists, it is up to you to run the configure the dotfiles."
 else
-  if git clone https://github.com/tableba/dotfiles.git $HOME/.dotfiles 2>&1 | tee -a "$LOG"; then
+  if git clone https://github.com/tableba/dotfiles.git "$HOME/.dotfiles" 2>&1 | tee -a "$LOG"; then
     cd "$HOME/.dotfiles" || exit 1
     chmod +x install.sh
     ./install.sh
