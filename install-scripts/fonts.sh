@@ -19,13 +19,14 @@ LOG="Install-Logs/install-$(date +%d-%H%M%S)_fonts.log"
 
 fonts_packages=(
   adobe-source-code-pro-fonts 
+  noto-fonts
   noto-fonts-emoji
   noto-fonts-cjk
-  otf-font-awesome 
   ttf-droid 
   ttf-fira-code
   ttf-jetbrains-mono 
   ttf-jetbrains-mono-nerd 
+  ttf-ubuntu-font-family
 )
 
 # Installation of main components

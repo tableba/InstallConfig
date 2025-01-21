@@ -25,7 +25,7 @@ if [ -n "$ISAUR" ]; then
 else
   printf "\n%s - AUR helper was NOT located\n" "$WARN"
   printf "\n%s - Installing yay from AUR\n" "${NOTE}"
-  git clone https://aur.archlinux.org/yay.git || { printf "%s - Failed to clone yay from AUR\n" "${ERROR}"; exit 1; }
+  git clone https://aur.archlinux.org/yay.git 2>&1 | tee -a "$LOG" || { printf "%s - Failed to clone yay from AUR\n" "${ERROR}"; exit 1; }
   cd yay || { printf "%s - Failed to enter yay directory\n" "${ERROR}"; exit 1; }
   makepkg -si --noconfirm 2>&1 | tee -a "$LOG" || { printf "%s - Failed to install yay from AUR\n" "${ERROR}"; exit 1; }
 

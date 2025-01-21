@@ -24,6 +24,9 @@ fcitx5_package=(
   fcitx5-configtool
   fcitx5-mozc-ut
   fcitx5-qt
+)
+
+fcitx5_package_yay=(
   mozc
 )
 
@@ -31,6 +34,14 @@ for FCITX5 in "${fcitx5_package[@]}"; do
   install_package_pacman "$FCITX5" 2>&1 | tee -a "$LOG"
   if [ $? -ne 0 ]; then
     echo -e "\e[1A\e[K${ERROR} - $FCITX5 Package installation failed, Please check the installation logs"
+    exit 1
+  fi
+done
+
+for FCITX5_YAY in "${fcitx5_package_yay[@]}"; do
+  install_package "$FCITX5_YAY" 2>&1 | tee -a "$LOG"
+  if [ $? -ne 0 ]; then
+    echo -e "\e[1A\e[K${ERROR} - $FCITX5_YAY Package installation failed, Please check the installation logs"
     exit 1
   fi
 done
