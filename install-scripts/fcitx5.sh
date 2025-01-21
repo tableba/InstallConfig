@@ -22,11 +22,11 @@ LOG="Install-Logs/install-$(date +%d-%H%M%S)_fcitx5.log"
 fcitx5_package=(
   fcitx5
   fcitx5-configtool
-  fcitx5-mozc-ut
   fcitx5-qt
 )
 
 fcitx5_package_yay=(
+  fcitx5-mozc-ut
   mozc
 )
 

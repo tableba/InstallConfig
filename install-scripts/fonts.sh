@@ -28,7 +28,7 @@ fonts_packages=(
   ttf-ubuntu-font-family
 )
 
-fonts_packages=(
+fonts_packages_yay=(
   ttf-ms-fonts
 )
 
@@ -44,7 +44,7 @@ for FONT in "${fonts_packages[@]}"; do
   fi
 done
 
-for FONT_YAY in "${fonts_packages[@]}"; do
+for FONT_YAY in "${fonts_packages_yay[@]}"; do
   install_package "$FONT_YAY" 2>&1 | tee -a "$LOG"
   if [ $? -ne 0 ]; then
     echo -e "\e[1A\e[K${ERROR} - $FONT_YAY Package installation failed, Please check the installation logs"
