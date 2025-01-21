@@ -18,16 +18,20 @@ source "$(dirname "$(readlink -f "$0")")/global_functions.sh"
 LOG="Install-Logs/install-$(date +%d-%H%M%S)_fonts.log"
 
 fonts_packages=(
-  adobe-source-code-pro-fonts 
+  ttf-liberation
+  ttf-dejavu
   noto-fonts
   noto-fonts-emoji
   noto-fonts-cjk
-  ttf-droid 
-  ttf-fira-code
   ttf-jetbrains-mono 
   ttf-jetbrains-mono-nerd 
   ttf-ubuntu-font-family
 )
+
+fonts_packages=(
+  ttf-ms-fonts
+)
+
 
 # Installation of main components
 printf "\n%s - Installing fonts .... \n" "${NOTE}"
@@ -36,6 +40,14 @@ for FONT in "${fonts_packages[@]}"; do
   install_package_pacman "$FONT" 2>&1 | tee -a "$LOG"
   if [ $? -ne 0 ]; then
     echo -e "\e[1A\e[K${ERROR} - $FONT Package installation failed, Please check the installation logs"
+    exit 1
+  fi
+done
+
+for FONT_YAY in "${fonts_packages[@]}"; do
+  install_package "$FONT_YAY" 2>&1 | tee -a "$LOG"
+  if [ $? -ne 0 ]; then
+    echo -e "\e[1A\e[K${ERROR} - $FONT_YAY Package installation failed, Please check the installation logs"
     exit 1
   fi
 done
