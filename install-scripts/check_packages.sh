@@ -17,6 +17,7 @@ packages=(
     man-pages
     texinfo
     openssh
+    rsync
 )
 
 # Function to check if a package is installed

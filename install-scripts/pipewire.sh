@@ -14,6 +14,10 @@ pipewire=(
     sof-firmware
 )
 
+pipewire_yay=(
+	pwvucontrol
+)
+
 # Determine the directory where the script is located
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
@@ -32,6 +36,11 @@ printf "${NOTE} Installing Pipewire Packages...\n"
 for PIPEWIRE in "${pipewire[@]}"; do
     install_package_pacman "$PIPEWIRE" 2>&1 | tee -a "$LOG"
     [ $? -ne 0 ] && { echo -e "\e[1A\e[K${ERROR} - $PIPEWIRE Package installation failed, Please check the installation logs"; exit 1; }
+done
+
+for PIPEWIRE_YAY in "${pipewire_yay[@]}"; do
+    install_package "$PIPEWIRE_YAY" 2>&1 | tee -a "$LOG"
+    [ $? -ne 0 ] && { echo -e "\e[1A\e[K${ERROR} - $PIPEWIRE_YAY Package installation failed, Please check the installation logs"; exit 1; }
 done
 
 printf "Activating Pipewire Services...\n"

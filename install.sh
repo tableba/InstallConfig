@@ -42,6 +42,12 @@ fi
 chmod +x "$SCRIPT_DIR/yay.sh"
 "$SCRIPT_DIR/yay.sh"
 
+#reflector
+echo -e "\n$NOTE Updating mirrorlist using reflector..."
+sudo reflector --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+sudo pacman -Syy
+
+
 #hyprland and other packages
 read -p "Installing hyprland packages, Are you sure you want to continue? (y/n, Enter for yes): " confirm
 if [[ -z "$confirm" || "$confirm" =~ ^[yY]([eE][sS])?$ ]]; then
