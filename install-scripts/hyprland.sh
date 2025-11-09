@@ -29,6 +29,7 @@ hyprland_packages=(
 
 hyprland_packages_yay=(
   hyprshot
+  hyprshade
 )
 
 
