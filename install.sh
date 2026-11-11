@@ -16,7 +16,7 @@ SCRIPT_DIR=$INSTALL_DIR/install-scripts
 
 # Create Directory for Install Logs
 if [ ! -d Install-Logs ]; then
-    mkdir Install-Logs
+  mkdir Install-Logs
 fi
 
 echo "$(tput bold) *** Welcome to this Hyprland & co installation script! *** $ORANGE"
@@ -34,10 +34,10 @@ chmod +x "$SCRIPT_DIR/check_packages.sh"
 #installing yay
 read -p "Installing yay, Are you sure you want to continue? (y/n, Enter for yes): " confirm
 if [[ -z "$confirm" || "$confirm" =~ ^[yY]([eE][sS])?$ ]]; then
-    echo
+  echo
 else
-    echo "Exiting..."
-    exit 1
+  echo "Exiting..."
+  exit 1
 fi
 chmod +x "$SCRIPT_DIR/yay.sh"
 "$SCRIPT_DIR/yay.sh"
@@ -47,14 +47,13 @@ echo -e "\n$NOTE Updating mirrorlist using reflector..."
 sudo reflector --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 sudo pacman -Syy
 
-
 #hyprland and other packages
 read -p "Installing hyprland packages, Are you sure you want to continue? (y/n, Enter for yes): " confirm
 if [[ -z "$confirm" || "$confirm" =~ ^[yY]([eE][sS])?$ ]]; then
-    echo
+  echo
 else
-    echo "Exiting..."
-    exit 1
+  echo "Exiting..."
+  exit 1
 fi
 chmod +x "$SCRIPT_DIR/hyprland.sh"
 "$SCRIPT_DIR/hyprland.sh"
@@ -67,27 +66,14 @@ echo "$NOTE Package installation is complete."
 #dotfiles
 read -p "Installing dotfiles, Are you sure you want to continue? (y/n, Enter for yes): " confirm
 if [[ -z "$confirm" || "$confirm" =~ ^[yY]([eE][sS])?$ ]]; then
-    echo
+  echo
 else
-    echo "Exiting..."
-    exit 1
+  echo "Exiting..."
+  exit 1
 fi
 chmod +x "$SCRIPT_DIR/dotfiles.sh"
 "$SCRIPT_DIR/dotfiles.sh"
 
-#fcitx5
-read -p "installing fcitx5, Are you sure you want to continue? (y/n, Enter for yes): " confirm
-if [[ -z "$confirm" || "$confirm" =~ ^[yY]([eE][sS])?$ ]]; then
-    echo
-else
-    echo "Exiting..."
-    exit 1
-fi
-
-chmod +x "$SCRIPT_DIR/fcitx5.sh"
-"$SCRIPT_DIR/fcitx5.sh"
-
 echo "$NOTE Installation is done"
 echo "Have fun :D"
 echo
-

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Determine the directory where the script is located
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Change the working directory to the parent directory of the script
 PARENT_DIR="$SCRIPT_DIR/.."
@@ -13,25 +13,32 @@ source "$(dirname "$(readlink -f "$0")")/global_functions.sh"
 LOG="Install-Logs/install-$(date +%d-%H%M%S)_hyprland.log"
 
 hyprland_packages=(
-	hyprland
-	waybar
-	kitty
-	dunst
-	xdg-desktop-portal-hyprland
-	hyprpolkitagent
-	qt5-wayland
-	qt6-wayland
-	hyprpaper
-	rofi-wayland
-	cliphist
-	dolphin
+  hyprland
+  waybar
+  kitty
+  dunst
+  xdg-desktop-portal-hyprland
+  hyprpolkitagent
+  qt5-wayland
+  qt6-wayland
+  hyprpaper
+  rofi-wayland
+  cliphist
+  dolphin
+  reflector
+  gedit
+  mpv
+  nvim
+  reflector
 )
 
 hyprland_packages_yay=(
   hyprshot
   hyprshade
+  anki
+  kvantum
+  cups
 )
-
 
 # Installation of main components
 printf "\n%s - Installing Hyprland packages.... \n" "${NOTE}"

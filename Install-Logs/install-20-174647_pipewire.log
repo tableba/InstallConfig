@@ -1,0 +1,780 @@
+[32m[OK][m pipewire is already installed. Skipping...
+[33m[NOTE][m Installing wireplumber ...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) wireplumber-0.5.18-1
+
+Total Download Size:   0.30 MiB
+Total Installed Size:  1.29 MiB
+
+:: Proceed with installation? [Y/n] 
+:: Retrieving packages...
+ wireplumber-0.5.18-1-x86_64 downloading...
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Processing package changes...
+installing wireplumber...
+Created symlink '/etc/systemd/user/pipewire-session-manager.service' → '/usr/lib/systemd/user/wireplumber.service'.
+Created symlink '/etc/systemd/user/pipewire.service.wants/wireplumber.service' → '/usr/lib/systemd/user/wireplumber.service'.
+Optional dependencies for wireplumber
+    wireplumber-docs: Documentation
+    wireplumber-system-services: System daemon (not recommended)
+:: Running post-transaction hooks...
+(1/2) Reloading user manager configuration...
+(2/2) Arming ConditionNeedsUpdate...
+[1A[K[32m[OK][m Package [33mwireplumber[m has been successfully installed!
+[33m[NOTE][m Installing pipewire-audio ...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (17) alsa-card-profiles-1:1.6.9-1  libebur128-1.2.6-2  libfdk-aac-3.0.0-1  libfreeaptx-0.2.2-1  liblc3-1.1.3-2  libldac-2.0.2.6-1  libmysofa-1.3.5-1  lilv-0.28.0-1  lv2-1.18.10-2  sbc-2.2-1  serd-0.32.10-1  sord-0.16.22-1  spandsp-0.0.6-7  sratom-0.6.22-1  webrtc-audio-processing-1-1.3-6  zix-0.8.2-1  pipewire-audio-1:1.6.9-1
+
+Total Download Size:    5.30 MiB
+Total Installed Size:  14.12 MiB
+
+:: Proceed with installation? [Y/n] 
+:: Retrieving packages...
+ pipewire-audio-1:1.6.9-1-x86_64 downloading...
+ libfdk-aac-3.0.0-1-x86_64 downloading...
+ libmysofa-1.3.5-1-x86_64 downloading...
+ webrtc-audio-processing-1-1.3-6-x86_64 downloading...
+ spandsp-0.0.6-7-x86_64 downloading...
+ lv2-1.18.10-2-x86_64 downloading...
+ liblc3-1.1.3-2-x86_64 downloading...
+ serd-0.32.10-1-x86_64 downloading...
+ lilv-0.28.0-1-x86_64 downloading...
+ sbc-2.2-1-x86_64 downloading...
+ zix-0.8.2-1-x86_64 downloading...
+ libldac-2.0.2.6-1-x86_64 downloading...
+ sord-0.16.22-1-x86_64 downloading...
+ alsa-card-profiles-1:1.6.9-1-x86_64 downloading...
+ sratom-0.6.22-1-x86_64 downloading...
+ libfreeaptx-0.2.2-1-x86_64 downloading...
+ libebur128-1.2.6-2-x86_64 downloading...
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Processing package changes...
+installing alsa-card-profiles...
+installing libebur128...
+installing libfdk-aac...
+installing libfreeaptx...
+installing liblc3...
+Optional dependencies for liblc3
+    python: Python bindings [installed]
+installing libldac...
+installing libmysofa...
+installing serd...
+Optional dependencies for serd
+    serd-docs: for developer documentation
+installing zix...
+Optional dependencies for zix
+    zix-docs: for developer documentation
+installing sord...
+Optional dependencies for sord
+    sord-docs: for developer documentation
+installing lv2...
+Optional dependencies for lv2
+    lv2-docs: for developer documentation
+    lv2-example-plugins: for example plugins
+    python-lxml: for lv2specgen.py
+    python-markdown: for lv2specgen.py
+    python-pygments: for lv2specgen.py
+    python-rdflib: for lv2specgen.py
+    sord: for lv2_validate [installed]
+installing sratom...
+Optional dependencies for sratom
+    sratom-docs: for developer documentation
+installing lilv...
+Optional dependencies for lilv
+    lilv-docs: for documentation
+    lilv-tools: for CLI tools
+    python-lilv: for Python bindings
+installing sbc...
+installing spandsp...
+installing webrtc-audio-processing-1...
+installing pipewire-audio...
+:: Running post-transaction hooks...
+(1/2) Reloading device manager configuration...
+(2/2) Arming ConditionNeedsUpdate...
+[1A[K[32m[OK][m Package [33mpipewire-audio[m has been successfully installed!
+[33m[NOTE][m Installing pipewire-alsa ...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) pipewire-alsa-1:1.6.9-1
+
+Total Download Size:   0.01 MiB
+Total Installed Size:  0.00 MiB
+
+:: Proceed with installation? [Y/n] 
+:: Retrieving packages...
+ pipewire-alsa-1:1.6.9-1-x86_64 downloading...
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Processing package changes...
+installing pipewire-alsa...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+[1A[K[32m[OK][m Package [33mpipewire-alsa[m has been successfully installed!
+[33m[NOTE][m Installing pipewire-pulse ...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) pipewire-pulse-1:1.6.9-1
+
+Total Download Size:   0.21 MiB
+Total Installed Size:  0.55 MiB
+
+:: Proceed with installation? [Y/n] 
+:: Retrieving packages...
+ pipewire-pulse-1:1.6.9-1-x86_64 downloading...
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Processing package changes...
+installing pipewire-pulse...
+Created symlink '/etc/systemd/user/sockets.target.wants/pipewire-pulse.socket' → '/usr/lib/systemd/user/pipewire-pulse.socket'.
+:: Running post-transaction hooks...
+(1/3) Reloading user manager configuration...
+(2/3) Arming ConditionNeedsUpdate...
+(3/3) Compiling GSettings XML schema files...
+[1A[K[32m[OK][m Package [33mpipewire-pulse[m has been successfully installed!
+[33m[NOTE][m Installing sof-firmware ...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) sof-firmware-2026.09.2-1
+
+Total Download Size:    2.39 MiB
+Total Installed Size:  55.07 MiB
+
+:: Proceed with installation? [Y/n] 
+:: Retrieving packages...
+ sof-firmware-2026.09.2-1-x86_64 downloading...
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Processing package changes...
+installing sof-firmware...
+:: Running post-transaction hooks...
+(1/2) Arming ConditionNeedsUpdate...
+(2/2) Updating linux initcpios...
+==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'default'
+==> Using default configuration file: '/etc/mkinitcpio.conf'
+  -> -k /boot/vmlinuz-linux -g /boot/initramfs-linux.img
+==> Starting build: '7.2.11-arch1-1'
+  -> Running build hook: [base]
+  -> Running build hook: [systemd]
+  -> Running build hook: [autodetect]
+  -> Running build hook: [microcode]
+  -> Running build hook: [modconf]
+  -> Running build hook: [kms]
+  -> Running build hook: [keyboard]
+  -> Running build hook: [sd-vconsole]
+  -> Running build hook: [block]
+  -> Running build hook: [filesystems]
+  -> Running build hook: [fsck]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux.img'
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+[1A[K[32m[OK][m Package [33msof-firmware[m has been successfully installed!
+[33m[NOTE][m Installing pwvucontrol ...
+AUR Explicit (1): pwvucontrol-0.5.3-2
+Sync Make Dependency (4): rust-1:1.99.1-1, clang-23.1.3-4, meson-1.12.1-2, blueprint-compiler-0.22.2-1
+Sync Dependency (2): gtk4-1:4.24.1-1, libadwaita-1:1.10.0-1
+Sync Check Dependency (1): appstream-glib-0.8.4-1
+:: [1m(1/1) Downloaded PKGBUILD: pwvucontrol[0m
+  1 pwvucontrol                              (Build Files Exist)
+==> Packages to cleanBuild?
+==> [N]one [A]ll [Ab]ort [I]nstalled [No]tInstalled or (1 2 3, 1-3, ^4)
+==> 
+  1 pwvucontrol                              (Build Files Exist)
+==> Diffs to show?
+==> [N]one [A]ll [Ab]ort [I]nstalled [No]tInstalled or (1 2 3, 1-3, ^4)
+==> 
+==> Making package: pwvucontrol 0.5.3-2 (Tue Oct 20 17:47:09 2026)
+==> Retrieving sources...
+  -> Downloading pwvucontrol-0.5.3.tar.gz...
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+  0      0   0      0   0      0      0      0                              0  0      0   0      0   0      0      0      0                              0  0      0   0      0   0      0      0      0                              0
+  0      0   0      0   0      0      0      0                              0100 103.0k   0 103.0k   0      0  97121      0           00:01              0100 103.0k   0 103.0k   0      0  97114      0           00:01              0100 103.0k   0 103.0k   0      0  97108      0           00:01              0
+==> WARNING: Skipping verification of source file PGP signatures.
+==> Validating source files with b2sums...
+    pwvucontrol-0.5.3.tar.gz ... Passed
+:: [1m(1/1) Parsing SRCINFO: pwvucontrol[0m
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (27) clang-libs-23.1.3-4  compiler-rt-23.1.3-4  gobject-introspection-runtime-1.86.0-2  gssdp-1.6.6-1  gst-plugins-bad-libs-1.28.8-1  gupnp-1:1.6.10-1  gupnp-igd-1.6.0-2  libgirepository-1.86.0-2  libgit2-1:1.9.7-1  libnice-0.1.24-1  libyaml-0.2.5-3  lld-23.1.3-4  llhttp-9.3.1-1  llvm-23.1.3-4  llvm-lit-23.1.3-4  ministream-0.99.1-1  ninja-1.13.2-3  python-gobject-3.58.1-1  python-tqdm-4.70.1-1  xdg-desktop-portal-gtk-1.15.3-2  appstream-glib-0.8.4-1  blueprint-compiler-0.22.2-1  clang-23.1.3-4  gtk4-1:4.24.1-1  libadwaita-1:1.10.0-1  meson-1.12.1-2  rust-1:1.99.1-1
+
+Total Download Size:   177.34 MiB
+Total Installed Size:  814.42 MiB
+
+:: Proceed with installation? [Y/n] 
+:: Retrieving packages...
+ rust-1:1.99.1-1-x86_64 downloading...
+ clang-libs-23.1.3-4-x86_64 downloading...
+ clang-23.1.3-4-x86_64 downloading...
+ llvm-23.1.3-4-x86_64 downloading...
+ gtk4-1:4.24.1-1-x86_64 downloading...
+ compiler-rt-23.1.3-4-x86_64 downloading...
+ gst-plugins-bad-libs-1.28.8-1-x86_64 downloading...
+ meson-1.12.1-2-any downloading...
+ lld-23.1.3-4-x86_64 downloading...
+ libgit2-1:1.9.7-1-x86_64 downloading...
+ libadwaita-1:1.10.0-1-x86_64 downloading...
+ appstream-glib-0.8.4-1-x86_64 downloading...
+ blueprint-compiler-0.22.2-1-any downloading...
+ libnice-0.1.24-1-x86_64 downloading...
+ python-gobject-3.58.1-1-x86_64 downloading...
+ llvm-lit-23.1.3-4-x86_64 downloading...
+ ninja-1.13.2-3-x86_64 downloading...
+ libgirepository-1.86.0-2-x86_64 downloading...
+ python-tqdm-4.70.1-1-any downloading...
+ gupnp-1:1.6.10-1-x86_64 downloading...
+ xdg-desktop-portal-gtk-1.15.3-2-x86_64 downloading...
+ gssdp-1.6.6-1-x86_64 downloading...
+ libyaml-0.2.5-3-x86_64 downloading...
+ gobject-introspection-runtime-1.86.0-2-x86_64 downloading...
+ llhttp-9.3.1-1-x86_64 downloading...
+ gupnp-igd-1.6.0-2-x86_64 downloading...
+ ministream-0.99.1-1-x86_64 downloading...
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Processing package changes...
+installing libyaml...
+installing appstream-glib...
+installing compiler-rt...
+installing llhttp...
+installing libgit2...
+installing lld...
+installing rust...
+Optional dependencies for rust
+    gdb: rust-gdb script [installed]
+    lldb: rust-lldb script
+installing clang-libs...
+Optional dependencies for clang-libs
+    python: for the libclang Python bindings [installed]
+installing llvm-lit...
+installing llvm...
+installing clang...
+Optional dependencies for clang
+    openmp: OpenMP support in clang with -fopenmp
+    python: for scan-view and git-clang-format [installed]
+installing ninja...
+installing python-tqdm...
+Optional dependencies for python-tqdm
+    python-requests: telegram
+installing meson...
+installing libgirepository...
+installing gobject-introspection-runtime...
+installing python-gobject...
+Optional dependencies for python-gobject
+    python-cairo: Cairo bindings
+installing blueprint-compiler...
+installing gssdp...
+Optional dependencies for gssdp
+    gtk4: gssdp-device-sniffer [pending]
+installing gupnp...
+Optional dependencies for gupnp
+    python: gupnp-binding-tool [installed]
+installing gupnp-igd...
+installing libnice...
+Optional dependencies for libnice
+    gstreamer: "nice" GStreamer plugin [installed]
+installing gst-plugins-bad-libs...
+installing xdg-desktop-portal-gtk...
+Optional dependencies for xdg-desktop-portal-gtk
+    evince: Print preview
+installing gtk4...
+Optional dependencies for gtk4
+    papers: default print previewer
+installing ministream...
+installing libadwaita...
+:: Running post-transaction hooks...
+(1/5) Reloading user manager configuration...
+(2/5) Updating the MIME type database...
+(3/5) Arming ConditionNeedsUpdate...
+(4/5) Compiling GSettings XML schema files...
+(5/5) Updating the desktop file MIME type cache...
+==> Making package: pwvucontrol 0.5.3-2 (Tue Oct 20 17:47:36 2026)
+==> Checking runtime dependencies...
+==> Checking buildtime dependencies...
+==> Retrieving sources...
+  -> Found pwvucontrol-0.5.3.tar.gz
+==> Validating source files with b2sums...
+    pwvucontrol-0.5.3.tar.gz ... Passed
+==> Removing existing $srcdir/ directory...
+==> Extracting sources...
+  -> Extracting pwvucontrol-0.5.3.tar.gz with bsdtar
+bsdtar: Failed to set default locale
+==> Sources are ready.
+==> Making package: pwvucontrol 0.5.3-2 (Tue Oct 20 17:47:37 2026)
+==> Checking runtime dependencies...
+==> Checking buildtime dependencies...
+==> WARNING: Using existing $srcdir/ tree
+==> Starting build()...
+
+Wrap files:
+Wrap blueprint-compiler.wrap type git not found: blueprint-compiler
+
++ exec meson setup --prefix /usr --libexecdir lib --sbindir bin --buildtype plain --auto-features enabled --wrap-mode nodownload -D b_pie=true -D python.bytecompile=1 --reconfigure pwvucontrol-0.5.3 build
+The Meson build system
+Version: 1.12.1
+Source dir: /home/antoine/.cache/yay/pwvucontrol/src/pwvucontrol-0.5.3
+Build dir: /home/antoine/.cache/yay/pwvucontrol/src/build
+Build type: native build
+Project name: pwvucontrol
+Project version: 0.5.3
+Rust compiler for the host machine: rustc -C linker=cc (rustc 1.99.1 "1.99.1")
+Rust linker for the host machine:  ld.bfd 2.47
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Run-time dependency glib-2.0 found: YES 2.90.1
+Run-time dependency gio-2.0 found: YES 2.90.1
+Run-time dependency gtk4 found: YES 4.24.1
+Run-time dependency libadwaita-1 found: YES 1.10.0
+Run-time dependency libpipewire-0.3 found: YES 1.6.9
+Run-time dependency wireplumber-0.5 found: YES 0.5.18
+Program glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Program glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Program desktop-file-validate found: YES (/usr/bin/desktop-file-validate)
+Program appstream-util found: YES (/usr/bin/appstream-util)
+Program cargo found: YES (/usr/bin/cargo)
+Program blueprint-compiler found: YES (/usr/bin/blueprint-compiler)
+Found pkg-config: YES (/usr/bin/pkg-config) 3.0.10
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-compile-resources found: YES (/usr/bin/glib-compile-resources)
+Configuring com.saivert.pwvucontrol.desktop.in using configuration
+Program msgfmt found: YES (/usr/bin/msgfmt)
+Configuring com.saivert.pwvucontrol.metainfo.xml.in using configuration
+Configuring com.saivert.pwvucontrol.gschema.xml using configuration
+Program msginit found: YES (/usr/bin/msginit)
+Program msgmerge found: YES (/usr/bin/msgmerge)
+Program xgettext found: YES (/usr/bin/xgettext)
+Configuring config.rs using configuration
+Message: Building in release mode
+Dependency gio-2.0 for host machine found: YES 2.90.1 (cached)
+Program /usr/bin/glib-compile-schemas found: YES (/usr/bin/glib-compile-schemas)
+Program gtk4-update-icon-cache found: YES (/usr/bin/gtk4-update-icon-cache)
+Program update-desktop-database found: YES (/usr/bin/update-desktop-database)
+Build targets in project: 17
+
+pwvucontrol 0.5.3
+
+  User defined options
+    auto_features     : enabled
+    b_pie             : true
+    buildtype         : plain
+    libexecdir        : lib
+    prefix            : /usr
+    python.bytecompile: 1
+    sbindir           : bin
+    wrap_mode         : nodownload
+
+Found ninja-1.13.2 at /usr/bin/ninja
+Generating targets:   0%|          | 0/17 eta ?                                               Writing build.ninja:   0%|          | 0/56 eta ?                                                ninja: Entering directory `/home/antoine/.cache/yay/pwvucontrol/src/build'
+[0/13] Generating data/dev-schema with a custom command
+[2/13] Building translation po/en/LC_MESSAGES/pwvucontrol-en.mo
+[3/13] Building translation po/fr/LC_MESSAGES/pwvucontrol-fr.mo
+[4/13] Building translation po/nb/LC_MESSAGES/pwvucontrol-nb.mo
+[5/13] Building translation po/nl/LC_MESSAGES/pwvucontrol-nl.mo
+[6/13] Building translation po/pl/LC_MESSAGES/pwvucontrol-pl.mo
+[7/13] Building translation po/ru/LC_MESSAGES/pwvucontrol-ru.mo
+[8/13] Building translation po/ka/LC_MESSAGES/pwvucontrol-ka.mo
+[9/13] Merging translations for data/com.saivert.pwvucontrol.desktop
+[10/13] Merging translations for data/com.saivert.pwvucontrol.metainfo.xml
+[11/13] Generating data/resources/blueprints with a custom command
+warning: Gtk.ShortcutsWindow is deprecated
+at ../pwvucontrol-0.5.3/data/resources/ui/help-overlay.blp line 3 column 1:
+   3 |ShortcutsWindow help_overlay {
+     |^^^^^^^^^^^^^^^
+hint: This widget will be removed in GTK 5
+
+warning: Gtk.ShortcutsSection is deprecated
+at ../pwvucontrol-0.5.3/data/resources/ui/help-overlay.blp line 6 column 3:
+   6 |  ShortcutsSection {
+     |  ^^^^^^^^^^^^^^^^
+hint: This widget will be removed in GTK 5
+
+warning: Gtk.ShortcutsGroup is deprecated
+at ../pwvucontrol-0.5.3/data/resources/ui/help-overlay.blp line 10 column 5:
+  10 |    ShortcutsGroup {
+     |    ^^^^^^^^^^^^^^
+hint: This widget will be removed in GTK 5
+
+warning: Gtk.ShortcutsShortcut is deprecated
+at ../pwvucontrol-0.5.3/data/resources/ui/help-overlay.blp line 13 column 7:
+  13 |      ShortcutsShortcut {
+     |      ^^^^^^^^^^^^^^^^^
+hint: This widget will be removed in GTK 5
+
+warning: Gtk.ShortcutsShortcut is deprecated
+at ../pwvucontrol-0.5.3/data/resources/ui/help-overlay.blp line 18 column 7:
+  18 |      ShortcutsShortcut {
+     |      ^^^^^^^^^^^^^^^^^
+hint: This widget will be removed in GTK 5
+
+warning: Gtk.ShortcutsShortcut is deprecated
+at ../pwvucontrol-0.5.3/data/resources/ui/help-overlay.blp line 23 column 7:
+  23 |      ShortcutsShortcut {
+     |      ^^^^^^^^^^^^^^^^^
+hint: This widget will be removed in GTK 5
+
+[12/13] Generating data/resources/resources_gresource with a custom command
+[12/13] Generating src/cargo-build with a custom command
+    Updating crates.io index
+    Updating git repository `https://github.com/saivert/wireplumber.rs.git`
+ Downloading crates ...
+  Downloaded bitflags v2.13.0
+  Downloaded autocfg v1.5.1
+  Downloaded cfg-if v1.0.4
+  Downloaded anstyle v1.0.14
+  Downloaded formatx v0.2.4
+  Downloaded cairo-sys-rs v0.21.5
+  Downloaded bitmaps v3.2.1
+  Downloaded convert_case v0.8.0
+  Downloaded target-lexicon v0.12.16
+  Downloaded cairo-rs v0.21.5
+  Downloaded anyhow v1.0.103
+  Downloaded equivalent v1.0.2
+  Downloaded gdk-pixbuf-sys v0.21.5
+  Downloaded field-offset v0.3.6
+  Downloaded futures-sink v0.3.32
+  Downloaded futures-task v0.3.32
+  Downloaded gettext-rs v0.7.7
+  Downloaded graphene-sys v0.21.5
+  Downloaded heck v0.5.0
+  Downloaded cfg_aliases v0.2.1
+  Downloaded futures-core v0.3.32
+  Downloaded futures-io v0.3.32
+  Downloaded futures-macro v0.3.32
+  Downloaded gsk4-sys v0.10.3
+  Downloaded lazy_static v1.5.0
+  Downloaded proc-macro-crate v3.5.0
+  Downloaded rustc-hash v2.1.3
+  Downloaded serde_spanned v0.6.9
+  Downloaded serde_spanned v1.1.1
+  Downloaded cexpr v0.6.0
+  Downloaded cookie-factory v0.3.3
+  Downloaded either v1.16.0
+  Downloaded futures-executor v0.3.32
+  Downloaded libspa-sys v0.9.2
+  Downloaded rustc_version v0.4.1
+  Downloaded memoffset v0.9.1
+  Downloaded pipewire-sys v0.9.2
+  Downloaded cc v1.2.66
+  Downloaded glob v0.3.3
+  Downloaded gobject-sys v0.21.5
+  Downloaded rand_xoshiro v0.6.0
+  Downloaded quote v1.0.46
+  Downloaded gdk-pixbuf v0.21.5
+  Downloaded find-msvc-tools v0.1.9
+  Downloaded gtk4-macros v0.10.3
+  Downloaded slab v0.4.12
+  Downloaded cfg-expr v0.20.8
+  Downloaded futures-channel v0.3.32
+  Downloaded graphene-rs v0.21.5
+  Downloaded pin-project-lite v0.2.17
+  Downloaded pkg-config v0.3.33
+  Downloaded shlex v1.3.0
+  Downloaded libloading v0.8.9
+  Downloaded pango-sys v0.21.5
+  Downloaded libadwaita-sys v0.8.1
+  Downloaded shlex v2.0.1
+  Downloaded cfg-expr v0.15.8
+  Downloaded clang-sys v1.8.1
+  Downloaded system-deps v6.2.2
+  Downloaded gsk4 v0.10.3
+  Downloaded glib-macros v0.21.5
+  Downloaded once_cell v1.21.4
+  Downloaded semver v1.0.28
+  Downloaded smallvec v1.15.2
+  Downloaded locale_config v0.3.0
+  Downloaded rand_core v0.6.4
+  Downloaded imbl-sized-chunks v0.1.3
+  Downloaded futures v0.3.32
+  Downloaded libspa v0.9.2
+  Downloaded pango v0.21.5
+  Downloaded glib-sys v0.21.5
+  Downloaded toml v1.1.2+spec-1.1.0
+  Downloaded log v0.4.33
+  Downloaded pipewire v0.9.2
+  Downloaded gdk4-sys v0.10.3
+  Downloaded proc-macro2 v1.0.106
+  Downloaded gio-sys v0.21.5
+  Downloaded gdk4 v0.10.3
+  Downloaded serde_core v1.0.228
+  Downloaded toml_datetime v0.6.11
+  Downloaded serde v1.0.228
+  Downloaded system-deps v7.0.8
+  Downloaded minimal-lexical v0.2.1
+  Downloaded gtk4-sys v0.10.3
+  Downloaded memchr v2.8.3
+  Downloaded itertools v0.13.0
+  Downloaded nom v7.1.3
+  Downloaded temp-dir v0.1.16
+  Downloaded version-compare v0.2.1
+  Downloaded imbl v3.0.0
+  Downloaded indexmap v2.14.0
+  Downloaded version_check v0.9.5
+  Downloaded hashbrown v0.17.1
+  Downloaded bindgen v0.72.1
+  Downloaded futures-util v0.3.32
+  Downloaded target-lexicon v0.13.5
+  Downloaded toml_datetime v1.1.1+spec-1.1.0
+  Downloaded libadwaita v0.8.1
+  Downloaded regex v1.12.4
+  Downloaded nom v8.0.0
+  Downloaded thiserror-impl v2.0.18
+  Downloaded thiserror v2.0.18
+  Downloaded gio v0.21.5
+  Downloaded glib v0.21.5
+  Downloaded toml_writer v1.1.1+spec-1.1.0
+  Downloaded toml v0.8.23
+  Downloaded syn v2.0.118
+  Downloaded toml_parser v1.1.2+spec-1.1.0
+  Downloaded regex-syntax v0.8.11
+  Downloaded nix v0.30.1
+  Downloaded gtk4 v0.10.3
+  Downloaded annotate-snippets v0.11.5
+  Downloaded toml_edit v0.22.27
+  Downloaded unicode-ident v1.0.24
+  Downloaded regex-automata v0.4.14
+  Downloaded libc v0.2.186
+  Downloaded toml_edit v0.25.12+spec-1.1.0
+  Downloaded unicode-segmentation v1.13.3
+  Downloaded aho-corasick v1.1.4
+  Downloaded winnow v1.0.3
+  Downloaded winnow v0.7.15
+  Downloaded unicode-width v0.2.2
+  Downloaded gettext-sys v0.26.0
+   Compiling winnow v1.0.3
+   Compiling toml_datetime v1.1.1+spec-1.1.0
+   Compiling smallvec v1.15.2
+   Compiling target-lexicon v0.13.5
+   Compiling heck v0.5.0
+   Compiling pkg-config v0.3.33
+   Compiling version-compare v0.2.1
+   Compiling serde_spanned v1.1.1
+   Compiling proc-macro2 v1.0.106
+   Compiling unicode-ident v1.0.24
+   Compiling quote v1.0.46
+   Compiling libc v0.2.186
+   Compiling equivalent v1.0.2
+   Compiling hashbrown v0.17.1
+   Compiling memchr v2.8.3
+   Compiling shlex v2.0.1
+   Compiling find-msvc-tools v0.1.9
+   Compiling glob v0.3.3
+   Compiling regex-syntax v0.8.11
+   Compiling cfg-if v1.0.4
+   Compiling cc v1.2.66
+   Compiling minimal-lexical v0.2.1
+   Compiling cfg-expr v0.20.8
+   Compiling indexmap v2.14.0
+   Compiling clang-sys v1.8.1
+   Compiling syn v2.0.118
+   Compiling libloading v0.8.9
+   Compiling toml_parser v1.1.2+spec-1.1.0
+   Compiling nom v7.1.3
+   Compiling futures-sink v0.3.32
+   Compiling unicode-width v0.2.2
+   Compiling anstyle v1.0.14
+   Compiling futures-core v0.3.32
+   Compiling either v1.16.0
+   Compiling regex-automata v0.4.14
+   Compiling bindgen v0.72.1
+   Compiling annotate-snippets v0.11.5
+   Compiling itertools v0.13.0
+   Compiling toml v1.1.2+spec-1.1.0
+   Compiling system-deps v7.0.8
+   Compiling toml_edit v0.25.12+spec-1.1.0
+   Compiling futures-channel v0.3.32
+   Compiling futures-task v0.3.32
+   Compiling bitflags v2.13.0
+   Compiling slab v0.4.12
+   Compiling futures-io v0.3.32
+   Compiling pin-project-lite v0.2.17
+   Compiling shlex v1.3.0
+   Compiling rustc-hash v2.1.3
+   Compiling proc-macro-crate v3.5.0
+   Compiling serde_core v1.0.228
+   Compiling log v0.4.33
+   Compiling serde v1.0.228
+   Compiling cexpr v0.6.0
+   Compiling regex v1.12.4
+   Compiling semver v1.0.28
+   Compiling target-lexicon v0.12.16
+   Compiling winnow v0.7.15
+   Compiling glib-sys v0.21.5
+   Compiling gobject-sys v0.21.5
+   Compiling gio-sys v0.21.5
+   Compiling pango-sys v0.21.5
+   Compiling cairo-sys-rs v0.21.5
+   Compiling gdk-pixbuf-sys v0.21.5
+   Compiling graphene-sys v0.21.5
+   Compiling gdk4-sys v0.10.3
+   Compiling gsk4-sys v0.10.3
+   Compiling gtk4-sys v0.10.3
+   Compiling autocfg v1.5.1
+   Compiling rustc_version v0.4.1
+   Compiling cfg_aliases v0.2.1
+   Compiling nix v0.30.1
+   Compiling aho-corasick v1.1.4
+   Compiling memoffset v0.9.1
+   Compiling cfg-expr v0.15.8
+   Compiling field-offset v0.3.6
+   Compiling temp-dir v0.1.16
+   Compiling gettext-sys v0.26.0
+   Compiling libadwaita-sys v0.8.1
+   Compiling libspa v0.9.2
+   Compiling thiserror v2.0.18
+   Compiling unicode-segmentation v1.13.3
+   Compiling anyhow v1.0.103
+   Compiling convert_case v0.8.0
+   Compiling serde_spanned v0.6.9
+   Compiling toml_datetime v0.6.11
+   Compiling wireplumber v0.2.0 (https://github.com/saivert/wireplumber.rs.git?branch=wp-0.5-glib-0.21-pipewire-0.9#04fbbc6e)
+   Compiling nom v8.0.0
+   Compiling toml_edit v0.22.27
+   Compiling rand_core v0.6.4
+   Compiling cookie-factory v0.3.3
+   Compiling lazy_static v1.5.0
+   Compiling bitmaps v3.2.1
+   Compiling imbl-sized-chunks v0.1.3
+   Compiling toml v0.8.23
+   Compiling futures-macro v0.3.32
+   Compiling glib-macros v0.21.5
+   Compiling system-deps v6.2.2
+   Compiling gtk4-macros v0.10.3
+   Compiling futures-util v0.3.32
+   Compiling thiserror-impl v2.0.18
+   Compiling rand_xoshiro v0.6.0
+   Compiling wireplumber-sys v0.2.0 (https://github.com/saivert/wireplumber.rs.git?branch=wp-0.5-glib-0.21-pipewire-0.9#04fbbc6e)
+   Compiling pwvucontrol v0.5.3 (/home/antoine/.cache/yay/pwvucontrol/src/pwvucontrol-0.5.3)
+   Compiling once_cell v1.21.4
+   Compiling imbl v3.0.0
+   Compiling formatx v0.2.4
+   Compiling locale_config v0.3.0
+   Compiling futures-executor v0.3.32
+   Compiling futures v0.3.32
+   Compiling gettext-rs v0.7.7
+   Compiling libspa-sys v0.9.2
+   Compiling glib v0.21.5
+   Compiling pipewire-sys v0.9.2
+   Compiling gio v0.21.5
+   Compiling cairo-rs v0.21.5
+   Compiling graphene-rs v0.21.5
+   Compiling pipewire v0.9.2
+   Compiling gdk-pixbuf v0.21.5
+   Compiling pango v0.21.5
+   Compiling gdk4 v0.10.3
+   Compiling gsk4 v0.10.3
+   Compiling gtk4 v0.10.3
+   Compiling libadwaita v0.8.1
+    Finished `release` profile [optimized] target(s) in 1m 41s
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /usr/bin/ninja -C /home/antoine/.cache/yay/pwvucontrol/src/build
+==> Starting check()...
+ninja: Entering directory `/home/antoine/.cache/yay/pwvucontrol/src/build'
+ninja: no work to do.
+1/3 pwvucontrol:validate-desktop OK              0.02s
+2/3 pwvucontrol:validate-gschema OK              0.01s
+3/3 pwvucontrol:validate-appdata OK              0.02s
+
+Ok:                3   
+Fail:              0   
+
+Full log written to /home/antoine/.cache/yay/pwvucontrol/src/build/meson-logs/testlog.txt
+==> Entering fakeroot environment...
+==> Starting package()...
+Installing data/resources/resources.gresource to /home/antoine/.cache/yay/pwvucontrol/pkg/pwvucontrol/usr/share/pwvucontrol
+Installing data/com.saivert.pwvucontrol.desktop to /home/antoine/.cache/yay/pwvucontrol/pkg/pwvucontrol/usr/share/applications
+Installing data/com.saivert.pwvucontrol.metainfo.xml to /home/antoine/.cache/yay/pwvucontrol/pkg/pwvucontrol/usr/share/metainfo
+Installing po/en/LC_MESSAGES/pwvucontrol.mo to /home/antoine/.cache/yay/pwvucontrol/pkg/pwvucontrol/usr/share/locale/en/LC_MESSAGES
+Installing po/fr/LC_MESSAGES/pwvucontrol.mo to /home/antoine/.cache/yay/pwvucontrol/pkg/pwvucontrol/usr/share/locale/fr/LC_MESSAGES
+Installing po/ka/LC_MESSAGES/pwvucontrol.mo to /home/antoine/.cache/yay/pwvucontrol/pkg/pwvucontrol/usr/share/locale/ka/LC_MESSAGES
+Installing po/nb/LC_MESSAGES/pwvucontrol.mo to /home/antoine/.cache/yay/pwvucontrol/pkg/pwvucontrol/usr/share/locale/nb/LC_MESSAGES
+Installing po/nl/LC_MESSAGES/pwvucontrol.mo to /home/antoine/.cache/yay/pwvucontrol/pkg/pwvucontrol/usr/share/locale/nl/LC_MESSAGES
+Installing po/pl/LC_MESSAGES/pwvucontrol.mo to /home/antoine/.cache/yay/pwvucontrol/pkg/pwvucontrol/usr/share/locale/pl/LC_MESSAGES
+Installing po/ru/LC_MESSAGES/pwvucontrol.mo to /home/antoine/.cache/yay/pwvucontrol/pkg/pwvucontrol/usr/share/locale/ru/LC_MESSAGES
+Installing src/pwvucontrol to /home/antoine/.cache/yay/pwvucontrol/pkg/pwvucontrol/usr/bin
+Installing /home/antoine/.cache/yay/pwvucontrol/src/pwvucontrol-0.5.3/data/icons/com.saivert.pwvucontrol.svg to /home/antoine/.cache/yay/pwvucontrol/pkg/pwvucontrol/usr/share/icons/hicolor/scalable/apps
+Installing /home/antoine/.cache/yay/pwvucontrol/src/pwvucontrol-0.5.3/data/icons/com.saivert.pwvucontrol-symbolic.svg to /home/antoine/.cache/yay/pwvucontrol/pkg/pwvucontrol/usr/share/icons/hicolor/symbolic/apps
+Installing /home/antoine/.cache/yay/pwvucontrol/src/build/data/com.saivert.pwvucontrol.gschema.xml to /home/antoine/.cache/yay/pwvucontrol/pkg/pwvucontrol/usr/share/glib-2.0/schemas
+Skipping custom install script because DESTDIR is set '/usr/bin/glib-compile-schemas /usr/share/glib-2.0/schemas'
+Skipping custom install script because DESTDIR is set '/usr/bin/gtk4-update-icon-cache -q -t -f /usr/share/icons/hicolor'
+Skipping custom install script because DESTDIR is set '/usr/bin/update-desktop-database -q /usr/share/applications'
+==> Tidying install...
+  -> Removing libtool files...
+  -> Removing static library files...
+  -> Purging unwanted files...
+  -> Stripping unneeded symbols from binaries and libraries...
+Error while writing index for `/home/antoine/.cache/yay/pwvucontrol/pkg/pwvucontrol/usr/bin/pwvucontrol': No debugging symbols
+gdb-add-index: No index was created for ./usr/bin/pwvucontrol
+gdb-add-index: [Was there no debuginfo? Was there already an index?]
+  -> Compressing man and info pages...
+libfakeroot internal error: payload not recognized!
+==> Checking for packaging issues...
+==> Creating package "pwvucontrol"...
+  -> Generating .PKGINFO file...
+  -> Generating .BUILDINFO file...
+  -> Generating .MTREE file...
+  -> Compressing package...
+==> Creating package "pwvucontrol-debug"...
+  -> Generating .PKGINFO file...
+  -> Generating .BUILDINFO file...
+  -> Generating .MTREE file...
+  -> Compressing package...
+==> Leaving fakeroot environment.
+==> Finished making: pwvucontrol 0.5.3-2 (Tue Oct 20 17:49:24 2026)
+==> Cleaning up...
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (2) pwvucontrol-0.5.3-2  pwvucontrol-debug-0.5.3-2
+
+Total Installed Size:  2.23 MiB
+
+:: Proceed with installation? [Y/n] 
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Processing package changes...
+installing pwvucontrol...
+installing pwvucontrol-debug...
+:: Running post-transaction hooks...
+(1/4) Arming ConditionNeedsUpdate...
+(2/4) Compiling GSettings XML schema files...
+(3/4) Updating icon theme caches...
+(4/4) Updating the desktop file MIME type cache...
+[1A[K[32m[OK][m Package [33mpwvucontrol[m has been successfully installed!
+Created symlink '/home/antoine/.config/systemd/user/sockets.target.wants/pipewire.socket' → '/usr/lib/systemd/user/pipewire.socket'.
+Created symlink '/home/antoine/.config/systemd/user/sockets.target.wants/pipewire-pulse.socket' → '/usr/lib/systemd/user/pipewire-pulse.socket'.
+Created symlink '/home/antoine/.config/systemd/user/pipewire-session-manager.service' → '/usr/lib/systemd/user/wireplumber.service'.
+Created symlink '/home/antoine/.config/systemd/user/pipewire.service.wants/wireplumber.service' → '/usr/lib/systemd/user/wireplumber.service'.
+Created symlink '/home/antoine/.config/systemd/user/default.target.wants/pipewire.service' → '/usr/lib/systemd/user/pipewire.service'.
