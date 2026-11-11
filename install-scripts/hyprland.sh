@@ -30,6 +30,7 @@ hyprland_packages=(
   mpv
   nvim
   reflector
+  firefox
 )
 
 hyprland_packages_yay=(
@@ -38,6 +39,7 @@ hyprland_packages_yay=(
   anki
   kvantum
   cups
+  gwenview
 )
 
 # Installation of main components
